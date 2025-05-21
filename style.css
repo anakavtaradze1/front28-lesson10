@@ -17,3 +17,86 @@ a {
   width: 100%;
   margin: 0 auto;
 }
+.partners-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "title bullets"
+    "text images"
+    ". images";
+}
+.partners-title {
+  grid-area: title;
+  font-size: 32px;
+  line-height: 39px;
+  color: #171717;
+  margin-bottom: 60px;
+  margin-top: 100px;
+}
+.partners-text {
+  grid-area: text;
+  width: 460px;
+  font-size: 16px;
+  line-height: 26px;
+}
+.lorem-history {
+  color: #0a22f4;
+}
+.card {
+  filter: grayscale(100%);
+}
+.partners-images {
+  grid-area: images;
+  gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 219px);
+  grid-template-areas:
+    "building-company precision-builders ascent"
+    "cat building lorem-ipsum"
+    "one-constructions bosch philips";
+  margin-bottom: 180px;
+}
+.building-company {
+  grid-area: building-company;
+}
+.precision-builders {
+  grid-area: precision-builders;
+}
+.ascent {
+  grid-area: ascent;
+}
+.cat {
+  grid-area: cat;
+}
+.building {
+  grid-area: building;
+}
+.lorem-ipsum {
+  grid-area: lorem-ipsum;
+}
+.one-constructions {
+  grid-area: one-constructions;
+}
+.bosch {
+  grid-area: bosch;
+}
+.philips {
+  grid-area: philips;
+}
+.bullets {
+  grid-area: bullets;
+  text-align: end;
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  margin-top: 100px;
+  margin-left: 20px;
+  background-color: #0a22f4;
+  opacity: 30%;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot.active {
+  opacity: 1;
+}
