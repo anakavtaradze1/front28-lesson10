@@ -1,3 +1,5 @@
+@import url("//cdn.web-fonts.ge/fonts/arial-geo/css/arial-geo.min.css");
+
 * {
   margin: 0;
   padding: 0;
@@ -16,4 +18,89 @@ a {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
+}
+.partners-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "partners-title partners-bullets"
+    "partners-text partners-images"
+    ". partners-images";
+}
+.partners-title {
+  grid-area: partners-title;
+  font-size: 32px;
+  line-height: 39px;
+  color: #171717;
+  margin-bottom: 60px;
+  margin-top: 100px;
+  font-family: "Arial GEO", sans-serif;
+}
+.partners-text {
+  grid-area: partners-text;
+  width: 430px;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Arial GEO", sans-serif;
+}
+.lorem-history {
+  color: #0a22f4;
+}
+.card {
+  filter: grayscale(100%);
+}
+.partners-images {
+  grid-area: partners-images;
+  gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 219px);
+  grid-template-areas:
+    "building-company precision-builders ascent"
+    "cat building lorem-ipsum"
+    "one-constructions bosch philips";
+  margin-bottom: 180px;
+}
+.building-company {
+  grid-area: building-company;
+}
+.precision-builders {
+  grid-area: precision-builders;
+}
+.ascent {
+  grid-area: ascent;
+}
+.cat {
+  grid-area: cat;
+}
+.building {
+  grid-area: building;
+}
+.lorem-ipsum {
+  grid-area: lorem-ipsum;
+}
+.one-constructions {
+  grid-area: one-constructions;
+}
+.bosch {
+  grid-area: bosch;
+}
+.philips {
+  grid-area: philips;
+}
+.partners-bullets {
+  grid-area: partners-bullets;
+  text-align: end;
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  margin-top: 100px;
+  margin-right: 20px;
+  background-color: #0a22f4;
+  opacity: 30%;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot.active {
+  opacity: 1;
 }
