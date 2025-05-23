@@ -53,7 +53,7 @@ a {
   grid-area: partners-images;
   gap: 25px;
   display: grid;
-  grid-template-columns: repeat(3, 219px); 
+  grid-template-columns: repeat(3, 219px);
   grid-template-areas:
     "building-company precision-builders ascent"
     "cat building lorem-ipsum"
