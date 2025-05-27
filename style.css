@@ -18,14 +18,17 @@ a {
 .header {
   background-color: #0a22f4;
   min-height: 1080px;
-  background-image: url("images/Rectangle 3@2x.png");
+  background-image: linear-gradient(
+      to left,
+      rgba(10, 34, 244, 100),
+      transparent
+    ),
+    url("images/Rectangle 3@2x.png");
   background-repeat: no-repeat;
   background-size: cover;
-
   background-position-x: -10.91vw;
   background-position-y: -10.91vw;
   background-blend-mode: overlay;
-  opacity: 0.8;
 }
 
 .header-container {
